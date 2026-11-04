@@ -1,0 +1,12 @@
+# Tells search engines what to look at.
+# Only the main page should show up in Google; the helper files below should not.
+User-agent: *
+Allow: /
+Disallow: /dist/
+Disallow: /reference/
+Disallow: /event-description.html
+Disallow: /build.py
+Disallow: /CLAUDE.md
+Disallow: /README.md
+
+Sitemap: https://spetejewishexperience.com/sitemap.xml
