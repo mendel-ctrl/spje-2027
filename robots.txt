@@ -9,4 +9,4 @@ Disallow: /build.py
 Disallow: /CLAUDE.md
 Disallow: /README.md
 
-Sitemap: https://spetejewishexperience.com/sitemap.xml
+Sitemap: https://spjewishexperience.com/sitemap.xml

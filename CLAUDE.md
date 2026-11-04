@@ -45,5 +45,8 @@ Sponsor/questions email: info@chabadsp.com.
 4. Copy `dist/ticket-tailor.html` into Ticket Tailor's code view and save.
 
 ## Cloudflare Pages settings
+Live website: https://spjewishexperience.com (also www.). This is the canonical URL used in the SEO tags,
+robots.txt and sitemap.xml. Note: the poster prints SPETEJEWISHEXPERIENCE.COM, which is a different,
+unregistered domain.
 Connected to the GitHub repo `mendel-ctrl/spje-2027`, branch `main`. Framework preset: None.
 Build command: (empty). Build output directory: `/`. Every push to `main` re-publishes the site.
