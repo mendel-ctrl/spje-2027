@@ -10,10 +10,14 @@ Lineup: 8th Day (headliner), the Lebovics Brothers Choir, comedian Eli Lebowicz 
 
 ## Files
 - `event-description.html` — the source. Edit this one. Photos are linked as `photos/name.jpg`.
-- `photos/` — all photos, already cropped and sized. `lebovics-brothers.jpg` is still missing.
+- `photos/` — all photos, already cropped and sized. `lebovics-brothers.jpg` is a crop from the poster
+  (replace with a real photo when available). `gallery-10.jpg` and `gallery-11.jpg` are still missing.
 - `build.py` — run `python3 build.py` to make `dist/ticket-tailor.html`, where photo links point to
   the public GitHub Pages site. That file is what gets pasted into Ticket Tailor.
-- `index.html` — preview page for GitHub Pages (open it in a browser to see the design).
+- `index.html` — the FULL standalone website (mobile-friendly, normal CSS in a `<style>` tag is fine here).
+  Hosted on Cloudflare Pages (and also visible on GitHub Pages). All Buy Tickets buttons link to Ticket Tailor.
+  The Ticket Tailor rules below do NOT apply to this file. When you change wording, change it in BOTH
+  `index.html` and `event-description.html`.
 - `reference/` — the event poster and the website-style inspiration image.
 
 ## Rules for Ticket Tailor (learned the hard way)
@@ -37,5 +41,9 @@ Sponsor/questions email: info@chabadsp.com.
 ## Workflow
 1. Edit `event-description.html` (or add photos to `photos/`).
 2. Run `python3 build.py`.
-3. Commit and push to GitHub (photos go live on GitHub Pages within a minute or two).
+3. Commit and push to GitHub (photos go live on GitHub Pages, and Cloudflare re-publishes the website, within a minute or two).
 4. Copy `dist/ticket-tailor.html` into Ticket Tailor's code view and save.
+
+## Cloudflare Pages settings
+Connected to the GitHub repo `mendel-ctrl/spje-2027`, branch `main`. Framework preset: None.
+Build command: (empty). Build output directory: `/`. Every push to `main` re-publishes the site.
