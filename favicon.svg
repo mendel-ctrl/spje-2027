@@ -1,8 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <!-- Tab icon: a stage microphone on the site's purple -->
+  <!-- Tab icon: a Star of David with party confetti, on the site's purple -->
   <rect width="64" height="64" rx="14" fill="#5b3fe0"/>
-  <rect x="23" y="8" width="18" height="29" rx="9" fill="#ffffff"/>
-  <path d="M27 16h10M27 21h10M27 26h10" stroke="#5b3fe0" stroke-width="2" stroke-linecap="round"/>
-  <path d="M16 30a16 16 0 0 0 32 0" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
-  <path d="M32 46v8M23 55h18" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+  <!-- confetti -->
+  <circle cx="10" cy="12" r="3" fill="#ffd166"/>
+  <circle cx="54" cy="10" r="2.5" fill="#ff7ab8"/>
+  <circle cx="55" cy="50" r="3" fill="#ffd166"/>
+  <circle cx="9" cy="52" r="2.5" fill="#7ee0ff"/>
+  <rect x="49" y="27" width="7" height="3" rx="1.5" fill="#7ee0ff" transform="rotate(35 52.5 28.5)"/>
+  <rect x="7" y="31" width="7" height="3" rx="1.5" fill="#ff7ab8" transform="rotate(-35 10.5 32.5)"/>
+  <!-- Star of David: two overlapping triangles -->
+  <g fill="none" stroke="#ffffff" stroke-width="4.5" stroke-linejoin="round">
+    <path d="M32 9 L52 43 L12 43 Z"/>
+    <path d="M32 55 L12 21 L52 21 Z"/>
+  </g>
 </svg>
