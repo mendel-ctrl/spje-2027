@@ -32,7 +32,12 @@ Lineup: 8th Day (headliner), the Lebovics Brothers Choir, comedian Eli Lebowicz 
 ## Design
 Dark concert-website style (inspired by reference/style-inspiration.jpg), colors from the poster:
 background #0a0910, accent purple #a48bff, button purple #5b3fe0, white headings.
-Script accents use 'Brush Script MT', 'Segoe Script', cursive.
+Script accents use 'Brush Script MT', 'Segoe Script', cursive (Ticket Tailor page).
+Website brand fonts from the designer, in `fonts/` (web format .woff2):
+- Roketto: bold headings (8th Day title, section titles, card names, prices).
+- Vintage Signature: script accents ("Live in Concert", "A Celebration of Jewish Life & Culture").
+- Montserrat (Google Fonts) stays for body text, buttons and small labels. Roketto has no "•" character.
+Ticket Tailor cannot load custom fonts (no <style>/@font-face allowed), so the Ticket Tailor page keeps the fallbacks.
 Four "Buy Tickets" buttons link to https://www.tickettailor.com/events/chabadjewishcenterofstpetersburg/2511961
 (confirm this link works once the event is published).
 Sponsorship tiers: Diamond $18,000, Platinum $10,000, Gold $7,200, Silver $5,000, Am Yisrael Chai $1,800.
