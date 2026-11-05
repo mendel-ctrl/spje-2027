@@ -217,6 +217,7 @@
 
   /* ---------- Phone ---------- */
   @media (max-width:700px){
+    .hero-img{object-position:43% 60%}  /* phones: center the photo between the two 8th Day brothers */
     .brand{font-size:15px; letter-spacing:1px; margin:0 auto}
     .nav .btn{display:none}
     .section{padding:60px 0}
@@ -237,6 +238,14 @@
     .mobile-cta{display:block; position:fixed; left:0; right:0; bottom:0; z-index:60; padding:10px 14px calc(10px + env(safe-area-inset-bottom)); background:rgba(6,5,9,.92); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); border-top:1px solid var(--line); transform:translateY(110%); transition:transform .3s}
     .mobile-cta.show{transform:none}
     .mobile-cta .btn{display:block; width:100%; text-align:center; padding:15px; box-shadow:none}
+  }
+
+  /* ---------- Small phones (e.g. iPhone SE): keep the countdown on one line ---------- */
+  @media (max-width:360px){
+    .countdown{gap:6px}
+    .countdown div{min-width:56px; padding:8px 4px}
+    .countdown b{font-size:19px}
+    .countdown small{font-size:9px; letter-spacing:1px}
   }
 
   @media (prefers-reduced-motion:reduce){ html{scroll-behavior:auto} *{transition:none!important} }
